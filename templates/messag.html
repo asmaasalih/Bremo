@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <div id="message">
+      <h1> Order success </h1>
+       <div id="meal-card">
+           <p>The process was successful.
+            Your order will be received within 30 minutes. Thank you </p>
+           <button class="button"><a href="{{url_for('home')}}"> Ok</a></button>
+            </div>
+        </div>
+
+{% endblock %}

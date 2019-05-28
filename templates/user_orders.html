@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+    <h2 class="order-header">Your Cart <img src="/static/images/shop.png"></h2>
+    {% for order in orders%}
+    <div class="order-card">
+            <p>{{ order.meal }}</p>
+            <a href="{{url_for('delete_order',id=order.id)}}"><img src="/static/images/delete.png"></a>
+     </div>
+    {% endfor %}
+{% endblock %}    
